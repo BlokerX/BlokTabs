@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlokTabs.MainPage" BackgroundColor="White"
+             x:Name="MainContentPage">
+
+    <Grid RowSpacing="0">
+
+        <Grid.RowDefinitions>
+
+            <!-- 0 -->
+            <RowDefinition Height="2*"/>
+
+            <!-- 1 -->
+            <RowDefinition Height="1*" />
+            <!-- 2 -->
+            <RowDefinition Height="1*" />
+            <!-- 3 -->
+            <RowDefinition Height="1*" />
+            <!-- 4 -->
+            <RowDefinition Height="1*" />
+            <!-- 5 -->
+            <RowDefinition Height="1*" />
+            <!-- 6 -->
+            <RowDefinition Height="1*" />
+
+            <!-- 7 -->
+            <RowDefinition Height="3*" />
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Text="Name:"/>
+            <Label Grid.Column="1" x:Name="FileNameEditor"/>
+
+            <!--Label Grid.Column="1" Text="Loaded File: none"/-->
+
+        </Grid>
+
+        <Line Grid.Row="1" BackgroundColor="Black" HeightRequest="1" VerticalOptions="CenterAndExpand" Margin="0" />
+
+        <Line Grid.Row="2" BackgroundColor="Black" HeightRequest="1" VerticalOptions="CenterAndExpand" Margin="0" />
+
+        <Line Grid.Row="3" BackgroundColor="Black" HeightRequest="1" VerticalOptions="CenterAndExpand" Margin="0" />
+
+        <Line Grid.Row="4" BackgroundColor="Black" HeightRequest="1" VerticalOptions="CenterAndExpand" Margin="0" />
+
+        <Line Grid.Row="5" BackgroundColor="Black" HeightRequest="1" VerticalOptions="CenterAndExpand" Margin="0" />
+
+        <Line Grid.Row="6" BackgroundColor="Black" HeightRequest="1" VerticalOptions="CenterAndExpand" Margin="0" />
+
+        <Grid Grid.Row="1" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 4 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 5 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 6 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 7 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 8 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 9 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 10 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 11 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 12 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 13 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 14 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 15 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 16 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 17 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 18 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 19 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 20 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 21 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 22 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 23 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 24 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 25 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 26 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 27 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 28 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 29 -->
+                <ColumnDefinition Width="1*"/>
+
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" x:Name="Tab_1_1"/>
+            <Grid Grid.Column="2" x:Name="Tab_1_2" />
+            <Grid Grid.Column="3" x:Name="Tab_1_3" />
+            <Grid Grid.Column="4" x:Name="Tab_1_4" />
+            <Grid Grid.Column="5" x:Name="Tab_1_5" />
+            <Grid Grid.Column="6" x:Name="Tab_1_6" />
+            <Grid Grid.Column="7" x:Name="Tab_1_7" />
+            <Grid Grid.Column="8" x:Name="Tab_1_8" />
+            <Grid Grid.Column="9" x:Name="Tab_1_9" />
+            <Grid Grid.Column="10" x:Name="Tab_1_10" />
+            <Grid Grid.Column="11" x:Name="Tab_1_11" />
+            <Grid Grid.Column="12" x:Name="Tab_1_12" />
+            <Grid Grid.Column="13" x:Name="Tab_1_13" />
+            <Grid Grid.Column="14" x:Name="Tab_1_14" />
+            <Grid Grid.Column="15" x:Name="Tab_1_15" />
+            <Grid Grid.Column="16" x:Name="Tab_1_16" />
+            <Grid Grid.Column="17" x:Name="Tab_1_17" />
+            <Grid Grid.Column="18" x:Name="Tab_1_18" />
+            <Grid Grid.Column="19" x:Name="Tab_1_19" />
+            <Grid Grid.Column="20" x:Name="Tab_1_20" />
+            <Grid Grid.Column="21" x:Name="Tab_1_21" />
+            <Grid Grid.Column="22" x:Name="Tab_1_22" />
+            <Grid Grid.Column="23" x:Name="Tab_1_23" />
+            <Grid Grid.Column="24" x:Name="Tab_1_24" />
+            <Grid Grid.Column="25" x:Name="Tab_1_25" />
+            <Grid Grid.Column="26" x:Name="Tab_1_26" />
+            <Grid Grid.Column="27" x:Name="Tab_1_27" />
+            <Grid Grid.Column="28" x:Name="Tab_1_28" />
+
+        </Grid>
+
+        <Grid Grid.Row="2" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 4 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 5 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 6 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 7 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 8 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 9 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 10 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 11 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 12 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 13 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 14 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 15 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 16 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 17 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 18 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 19 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 20 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 21 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 22 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 23 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 24 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 25 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 26 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 27 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 28 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 29 -->
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" x:Name="Tab_2_1"/>
+            <Grid Grid.Column="2" x:Name="Tab_2_2" />
+            <Grid Grid.Column="3" x:Name="Tab_2_3" />
+            <Grid Grid.Column="4" x:Name="Tab_2_4" />
+            <Grid Grid.Column="5" x:Name="Tab_2_5" />
+            <Grid Grid.Column="6" x:Name="Tab_2_6" />
+            <Grid Grid.Column="7" x:Name="Tab_2_7" />
+            <Grid Grid.Column="8" x:Name="Tab_2_8" />
+            <Grid Grid.Column="9" x:Name="Tab_2_9" />
+            <Grid Grid.Column="10" x:Name="Tab_2_10" />
+            <Grid Grid.Column="11" x:Name="Tab_2_11" />
+            <Grid Grid.Column="12" x:Name="Tab_2_12" />
+            <Grid Grid.Column="13" x:Name="Tab_2_13" />
+            <Grid Grid.Column="14" x:Name="Tab_2_14" />
+            <Grid Grid.Column="15" x:Name="Tab_2_15" />
+            <Grid Grid.Column="16" x:Name="Tab_2_16" />
+            <Grid Grid.Column="17" x:Name="Tab_2_17" />
+            <Grid Grid.Column="18" x:Name="Tab_2_18" />
+            <Grid Grid.Column="19" x:Name="Tab_2_19" />
+            <Grid Grid.Column="20" x:Name="Tab_2_20" />
+            <Grid Grid.Column="21" x:Name="Tab_2_21" />
+            <Grid Grid.Column="22" x:Name="Tab_2_22" />
+            <Grid Grid.Column="23" x:Name="Tab_2_23" />
+            <Grid Grid.Column="24" x:Name="Tab_2_24" />
+            <Grid Grid.Column="25" x:Name="Tab_2_25" />
+            <Grid Grid.Column="26" x:Name="Tab_2_26" />
+            <Grid Grid.Column="27" x:Name="Tab_2_27" />
+            <Grid Grid.Column="28" x:Name="Tab_2_28" />
+
+        </Grid>
+
+        <Grid Grid.Row="3" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 4 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 5 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 6 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 7 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 8 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 9 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 10 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 11 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 12 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 13 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 14 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 15 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 16 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 17 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 18 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 19 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 20 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 21 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 22 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 23 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 24 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 25 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 26 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 27 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 28 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 29 -->
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" x:Name="Tab_3_1"/>
+            <Grid Grid.Column="2" x:Name="Tab_3_2" />
+            <Grid Grid.Column="3" x:Name="Tab_3_3" />
+            <Grid Grid.Column="4" x:Name="Tab_3_4" />
+            <Grid Grid.Column="5" x:Name="Tab_3_5" />
+            <Grid Grid.Column="6" x:Name="Tab_3_6" />
+            <Grid Grid.Column="7" x:Name="Tab_3_7" />
+            <Grid Grid.Column="8" x:Name="Tab_3_8" />
+            <Grid Grid.Column="9" x:Name="Tab_3_9" />
+            <Grid Grid.Column="10" x:Name="Tab_3_10" />
+            <Grid Grid.Column="11" x:Name="Tab_3_11" />
+            <Grid Grid.Column="12" x:Name="Tab_3_12" />
+            <Grid Grid.Column="13" x:Name="Tab_3_13" />
+            <Grid Grid.Column="14" x:Name="Tab_3_14" />
+            <Grid Grid.Column="15" x:Name="Tab_3_15" />
+            <Grid Grid.Column="16" x:Name="Tab_3_16" />
+            <Grid Grid.Column="17" x:Name="Tab_3_17" />
+            <Grid Grid.Column="18" x:Name="Tab_3_18" />
+            <Grid Grid.Column="19" x:Name="Tab_3_19" />
+            <Grid Grid.Column="20" x:Name="Tab_3_20" />
+            <Grid Grid.Column="21" x:Name="Tab_3_21" />
+            <Grid Grid.Column="22" x:Name="Tab_3_22" />
+            <Grid Grid.Column="23" x:Name="Tab_3_23" />
+            <Grid Grid.Column="24" x:Name="Tab_3_24" />
+            <Grid Grid.Column="25" x:Name="Tab_3_25" />
+            <Grid Grid.Column="26" x:Name="Tab_3_26" />
+            <Grid Grid.Column="27" x:Name="Tab_3_27" />
+            <Grid Grid.Column="28" x:Name="Tab_3_28" />
+
+        </Grid>
+
+        <Grid Grid.Row="4" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 4 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 5 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 6 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 7 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 8 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 9 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 10 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 11 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 12 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 13 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 14 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 15 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 16 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 17 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 18 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 19 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 20 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 21 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 22 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 23 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 24 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 25 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 26 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 27 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 28 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 29 -->
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" x:Name="Tab_4_1"/>
+            <Grid Grid.Column="2" x:Name="Tab_4_2" />
+            <Grid Grid.Column="3" x:Name="Tab_4_3" />
+            <Grid Grid.Column="4" x:Name="Tab_4_4" />
+            <Grid Grid.Column="5" x:Name="Tab_4_5" />
+            <Grid Grid.Column="6" x:Name="Tab_4_6" />
+            <Grid Grid.Column="7" x:Name="Tab_4_7" />
+            <Grid Grid.Column="8" x:Name="Tab_4_8" />
+            <Grid Grid.Column="9" x:Name="Tab_4_9" />
+            <Grid Grid.Column="10" x:Name="Tab_4_10" />
+            <Grid Grid.Column="11" x:Name="Tab_4_11" />
+            <Grid Grid.Column="12" x:Name="Tab_4_12" />
+            <Grid Grid.Column="13" x:Name="Tab_4_13" />
+            <Grid Grid.Column="14" x:Name="Tab_4_14" />
+            <Grid Grid.Column="15" x:Name="Tab_4_15" />
+            <Grid Grid.Column="16" x:Name="Tab_4_16" />
+            <Grid Grid.Column="17" x:Name="Tab_4_17" />
+            <Grid Grid.Column="18" x:Name="Tab_4_18" />
+            <Grid Grid.Column="19" x:Name="Tab_4_19" />
+            <Grid Grid.Column="20" x:Name="Tab_4_20" />
+            <Grid Grid.Column="21" x:Name="Tab_4_21" />
+            <Grid Grid.Column="22" x:Name="Tab_4_22" />
+            <Grid Grid.Column="23" x:Name="Tab_4_23" />
+            <Grid Grid.Column="24" x:Name="Tab_4_24" />
+            <Grid Grid.Column="25" x:Name="Tab_4_25" />
+            <Grid Grid.Column="26" x:Name="Tab_4_26" />
+            <Grid Grid.Column="27" x:Name="Tab_4_27" />
+            <Grid Grid.Column="28" x:Name="Tab_4_28" />
+
+        </Grid>
+
+        <Grid Grid.Row="5" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 4 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 5 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 6 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 7 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 8 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 9 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 10 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 11 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 12 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 13 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 14 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 15 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 16 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 17 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 18 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 19 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 20 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 21 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 22 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 23 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 24 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 25 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 26 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 27 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 28 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 29 -->
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" x:Name="Tab_5_1"/>
+            <Grid Grid.Column="2" x:Name="Tab_5_2" />
+            <Grid Grid.Column="3" x:Name="Tab_5_3" />
+            <Grid Grid.Column="4" x:Name="Tab_5_4" />
+            <Grid Grid.Column="5" x:Name="Tab_5_5" />
+            <Grid Grid.Column="6" x:Name="Tab_5_6" />
+            <Grid Grid.Column="7" x:Name="Tab_5_7" />
+            <Grid Grid.Column="8" x:Name="Tab_5_8" />
+            <Grid Grid.Column="9" x:Name="Tab_5_9" />
+            <Grid Grid.Column="10" x:Name="Tab_5_10" />
+            <Grid Grid.Column="11" x:Name="Tab_5_11" />
+            <Grid Grid.Column="12" x:Name="Tab_5_12" />
+            <Grid Grid.Column="13" x:Name="Tab_5_13" />
+            <Grid Grid.Column="14" x:Name="Tab_5_14" />
+            <Grid Grid.Column="15" x:Name="Tab_5_15" />
+            <Grid Grid.Column="16" x:Name="Tab_5_16" />
+            <Grid Grid.Column="17" x:Name="Tab_5_17" />
+            <Grid Grid.Column="18" x:Name="Tab_5_18" />
+            <Grid Grid.Column="19" x:Name="Tab_5_19" />
+            <Grid Grid.Column="20" x:Name="Tab_5_20" />
+            <Grid Grid.Column="21" x:Name="Tab_5_21" />
+            <Grid Grid.Column="22" x:Name="Tab_5_22" />
+            <Grid Grid.Column="23" x:Name="Tab_5_23" />
+            <Grid Grid.Column="24" x:Name="Tab_5_24" />
+            <Grid Grid.Column="25" x:Name="Tab_5_25" />
+            <Grid Grid.Column="26" x:Name="Tab_5_26" />
+            <Grid Grid.Column="27" x:Name="Tab_5_27" />
+            <Grid Grid.Column="28" x:Name="Tab_5_28" />
+
+        </Grid>
+
+        <Grid Grid.Row="6" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+
+                <!-- 0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 4 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 5 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 6 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 7 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 8 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 9 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 10 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 11 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 12 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 13 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 14 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 15 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 16 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 17 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 18 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 19 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 20 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 21 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 22 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 23 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 24 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 25 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 26 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 27 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 28 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- 29 -->
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" x:Name="Tab_6_1"/>
+            <Grid Grid.Column="2" x:Name="Tab_6_2" />
+            <Grid Grid.Column="3" x:Name="Tab_6_3" />
+            <Grid Grid.Column="4" x:Name="Tab_6_4" />
+            <Grid Grid.Column="5" x:Name="Tab_6_5" />
+            <Grid Grid.Column="6" x:Name="Tab_6_6" />
+            <Grid Grid.Column="7" x:Name="Tab_6_7" />
+            <Grid Grid.Column="8" x:Name="Tab_6_8" />
+            <Grid Grid.Column="9" x:Name="Tab_6_9" />
+            <Grid Grid.Column="10" x:Name="Tab_6_10" />
+            <Grid Grid.Column="11" x:Name="Tab_6_11" />
+            <Grid Grid.Column="12" x:Name="Tab_6_12" />
+            <Grid Grid.Column="13" x:Name="Tab_6_13" />
+            <Grid Grid.Column="14" x:Name="Tab_6_14" />
+            <Grid Grid.Column="15" x:Name="Tab_6_15" />
+            <Grid Grid.Column="16" x:Name="Tab_6_16" />
+            <Grid Grid.Column="17" x:Name="Tab_6_17" />
+            <Grid Grid.Column="18" x:Name="Tab_6_18" />
+            <Grid Grid.Column="19" x:Name="Tab_6_19" />
+            <Grid Grid.Column="20" x:Name="Tab_6_20" />
+            <Grid Grid.Column="21" x:Name="Tab_6_21" />
+            <Grid Grid.Column="22" x:Name="Tab_6_22" />
+            <Grid Grid.Column="23" x:Name="Tab_6_23" />
+            <Grid Grid.Column="24" x:Name="Tab_6_24" />
+            <Grid Grid.Column="25" x:Name="Tab_6_25" />
+            <Grid Grid.Column="26" x:Name="Tab_6_26" />
+            <Grid Grid.Column="27" x:Name="Tab_6_27" />
+            <Grid Grid.Column="28" x:Name="Tab_6_28" />
+
+        </Grid>
+
+        <Grid Grid.Row="7">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Save" Clicked="SaveButton_Clicked"/>
+                <Button Grid.Column="1" Text="Save As" Clicked="SaveAsButton_Clicked"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Read From File" Clicked="ReadFromFileButton_Clicked"/>
+                <Button Grid.Column="1" x:Name="EditModeOnButton" Text="Edit Mode" Clicked="EditModeOnButton_Clicked"/>
+                <Button Grid.Column="1" x:Name="ViewModeOnButton" Text="View Mode" Clicked="ViewModeOnButton_Clicked" IsVisible="false"/>
+            </Grid>
+            
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
