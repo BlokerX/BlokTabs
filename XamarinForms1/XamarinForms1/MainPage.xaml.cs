@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Services;
+using SimplePopupForm.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -77,9 +79,9 @@ namespace BlokTabs
 
         private void SaveButton_Clicked(object sender, EventArgs e)
         {
-            if (File.Exists(FileAbsolutePath))
+            if (File.Exists(Path.Combine(SavesDirePath, FileName)))
             {
-                SaveTabsToFile(FileAbsolutePath);
+                SaveTabsToFile(Path.Combine(SavesDirePath, FileName));
                 SwitchToViewMode();
             }
             else
@@ -90,10 +92,24 @@ namespace BlokTabs
 
         private async void SaveAsButton_Clicked(object sender, EventArgs e)
         {
-            string result = await DisplayPromptAsync("Write file name", "File name:");
-            if (result != null && result != "")
-                FileName = result + ".BlokTabSave";
+            //var result = await DisplayPromptAsync("Write file name", "File name:", "OK", "Cancel", null, -1, null, FileName);
+            PopupEditTextTaskView popup;
+            await PopupNavigation.PushAsync(popup = new PopupEditTextTaskView("Save as", "File name:", FileName, "Write file name..."));
+            popup.OKClicked += SaveAs_Popup_OKClicked;
+            //popup.CancelClicked += SaveAs_Popup_CancelClicked;
+        }
+
+        private void SaveAs_Popup_OKClicked(object sender, EventArgs e)
+        {
+            var popup = sender as PopupEditTextTaskView;
+
+            if (popup.EntryText.Contains(".BlokTabSave"))
+                FileName = popup.EntryText;
+            else
+                FileName = popup.EntryText + ".BlokTabSave";
+
             FileAbsolutePath = Path.Combine(SavesDirePath, FileName);
+
             SaveTabsToFile(FileAbsolutePath);
             SwitchToViewMode();
         }
@@ -119,10 +135,11 @@ namespace BlokTabs
 
         private void SaveTabsToFile(string path)
         {
+            if (!File.Exists(Path.GetDirectoryName(path)))
+                Directory.CreateDirectory(Path.GetDirectoryName(path));
+
             if (File.Exists(path))
-            {
                 File.Delete(path);
-            }
 
             using (StreamWriter sw = File.CreateText(path))
             {

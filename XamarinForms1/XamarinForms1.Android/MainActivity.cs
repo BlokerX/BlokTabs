@@ -16,8 +16,9 @@ namespace BlokTabs.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             App.ExternalStorageAbsolutePath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDocuments).AbsolutePath;
-            base.OnCreate(savedInstanceState);
+            Rg.Plugins.Popup.Popup.Init(this);
 
+            base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
