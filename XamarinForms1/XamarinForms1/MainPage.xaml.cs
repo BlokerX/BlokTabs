@@ -93,13 +93,22 @@ namespace BlokTabs
         private async void SaveAsButton_Clicked(object sender, EventArgs e)
         {
             //var result = await DisplayPromptAsync("Write file name", "File name:", "OK", "Cancel", null, -1, null, FileName);
-            PopupEditTextTaskView popup;
-            await PopupNavigation.PushAsync(popup = new PopupEditTextTaskView("Save as", "File name:", FileName, "Write file name..."));
-            popup.OKClicked += SaveAs_Popup_OKClicked;
-            //popup.CancelClicked += SaveAs_Popup_CancelClicked;
+            PickDirectoryPopupTaskView popup;
+            await PopupNavigation.PushAsync(popup = new PickDirectoryPopupTaskView(Path.Combine(SavesDirePath), PickDirectoryPopupTaskView.PickType.Directory));
+            popup.SelectClicked += SaveAs_SetLocalisationPopup_SelectClicked;
         }
 
-        private void SaveAs_Popup_OKClicked(object sender, EventArgs e)
+        private string tmpPath;
+        private async void SaveAs_SetLocalisationPopup_SelectClicked(object sender, EventArgs e)
+        {
+            var pdp = (sender as PickDirectoryPopupTaskView);
+            tmpPath = pdp.AbsolutePath;
+            PopupEditTextTaskView popup;
+            await PopupNavigation.PushAsync(popup = new PopupEditTextTaskView("Save as", "File name:", FileName, "Write file name..."));
+            popup.OKClicked += SaveAs_SetNamePopup_OKClicked;
+        }
+
+        private void SaveAs_SetNamePopup_OKClicked(object sender, EventArgs e)
         {
             var popup = sender as PopupEditTextTaskView;
 
@@ -108,7 +117,7 @@ namespace BlokTabs
             else
                 FileName = popup.EntryText + ".BlokTabSave";
 
-            FileAbsolutePath = Path.Combine(SavesDirePath, FileName);
+            FileAbsolutePath = Path.Combine(tmpPath, FileName);
 
             SaveTabsToFile(FileAbsolutePath);
             SwitchToViewMode();
