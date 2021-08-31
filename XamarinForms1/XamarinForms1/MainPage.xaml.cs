@@ -16,12 +16,17 @@ namespace BlokTabs
     {
         public MainPage()
         {
+
+            TabFields = new Grid[TabsHeight, TabsWidth];
+            TabFieldsView = new View[TabsHeight, TabsWidth];
+
             InitializeComponent();
             PageBackgroundColor = ((ContentPage)FindByName("MainContentPage")).BackgroundColor;
             InitializeTabFields();
             InitializePaths();
 
             FileName = "TabTestFile";
+
         }
 
         #region Varibles and objects:
@@ -29,9 +34,13 @@ namespace BlokTabs
         // Readonly values:
         private readonly Color PageBackgroundColor;
 
+        // Varibles:
+        private readonly int TabsHeight = 6;
+        private int TabsWidth { get; set; } = 28;
+
         // Tabs:
-        private readonly Grid[,] TabFields = new Grid[6, 28];
-        private readonly View[,] TabFieldsView = new View[6, 28];
+        private Grid[,] TabFields { get; set; }
+        private View[,] TabFieldsView { get; set; }
 
 
         // Paths:
@@ -64,9 +73,9 @@ namespace BlokTabs
 
         private void InitializeTabFields()
         {
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < TabsHeight; i++)
             {
-                for (int j = 0; j < 28; j++)
+                for (int j = 0; j < TabsWidth; j++)
                 {
                     TabFields[i, j] = (Grid)FindByName($"Tab_{i + 1}_{j + 1}");
                 }
@@ -152,9 +161,9 @@ namespace BlokTabs
 
             using (StreamWriter sw = File.CreateText(path))
             {
-                for (int i = 0; i < 6; i++)
+                for (int i = 0; i < TabsHeight; i++)
                 {
-                    for (int j = 0; j < 28; j++)
+                    for (int j = 0; j < TabsWidth; j++)
                     {
                         if (TabFieldsView[i, j] != null)
                         {
@@ -183,9 +192,9 @@ namespace BlokTabs
             {
                 using (StreamReader sr = new StreamReader(path))
                 {
-                    for (int i = 0; i < 6; i++)
+                    for (int i = 0; i < TabsHeight; i++)
                     {
-                        for (int j = 0; j < 28; j++)
+                        for (int j = 0; j < TabsWidth; j++)
                         {
                             if (TabFieldsView[i, j] != null)
                             {
@@ -267,9 +276,9 @@ namespace BlokTabs
 
         private void SwitchToEditMode()
         {
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < TabsHeight; i++)
             {
-                for (int j = 0; j < 28; j++)
+                for (int j = 0; j < TabsWidth; j++)
                 {
 
                     // Pobieranie informacji z tego trybu
@@ -300,9 +309,9 @@ namespace BlokTabs
 
         private void SwitchToViewMode()
         {
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < TabsHeight; i++)
             {
-                for (int j = 0; j < 28; j++)
+                for (int j = 0; j < TabsWidth; j++)
                 {
 
                     // Pobieranie informacji z tego trybu

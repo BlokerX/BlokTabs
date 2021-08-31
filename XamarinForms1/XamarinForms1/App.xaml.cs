@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace BlokTabs
         public App()
         {
             InitializeComponent();
-
+            DeviceDisplay.KeepScreenOn = true;
             MainPage = new MainPage();
         }
 
